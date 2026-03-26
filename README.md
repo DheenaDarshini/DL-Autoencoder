@@ -22,9 +22,9 @@ STEP 6: Visualization and Analysis
 
 ## PROGRAM
 
-### Name:DHEENA DARSHINI KARTHIK DHEEPAN
+### Name:DHAMINI S
 
-### Register Number:212223240030
+### Register Number:212224040064
 
 ```python
 import torch.nn as nn
@@ -77,11 +77,14 @@ model = DenoisingAutoencoder().to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-
+print("Name:DHAMINI S")
+print("Register Number:212224040064")
 summary(model, input_size=(1, 28, 28))
 
 def train(model, loader, criterion, optimizer, epochs=5):
     model.train()
+    print("Name:DHAMINI S")
+    print("Register Number:212224040064")
     for epoch in range(epochs):
         running_loss = 0.0
         for images, _ in loader:
@@ -109,7 +112,8 @@ def visualize_denoising(model, loader, num_images=10):
     noisy_images = noisy_images.cpu().numpy()
     outputs = outputs.cpu().numpy()
 
-
+    print("Name:DHAMINI S")
+    print("Register Number:21222404000064")
     plt.figure(figsize=(18, 6))
 
     for i in range(num_images):
@@ -141,16 +145,15 @@ visualize_denoising(model, test_loader)
 ### OUTPUT
 
 ### Model Summary
-<img width="1174" height="819" alt="Screenshot 2026-03-26 205052" src="https://github.com/user-attachments/assets/7032e536-290e-4587-a2e8-86150d51c54b" />
+<img width="1174" height="819" alt="Screenshot 2026-03-26 205052" src="https://github.com/user-attachments/assets/57288599-4c34-4d5a-83e8-55a3977026a1" />
 
 
 ### Training loss
-
-<img width="504" height="196" alt="Screenshot 2026-03-26 205105" src="https://github.com/user-attachments/assets/93b64f49-8341-4ff1-8e5f-3d4e051e729e" />
+<img width="504" height="196" alt="Screenshot 2026-03-26 205105" src="https://github.com/user-attachments/assets/176e2f51-a206-47dd-9fdb-44f50f94825f" />
 
 
 ## Original vs Noisy Vs Reconstructed Image
-<img width="1201" height="412" alt="Screenshot 2026-03-26 205130" src="https://github.com/user-attachments/assets/24ace758-d1cb-4e1c-983c-855792430b46" />
+<img width="1201" height="412" alt="Screenshot 2026-03-26 205130" src="https://github.com/user-attachments/assets/d3408baa-ee60-4440-8376-de51ea42e7e9" />
 
 
 ## RESULT
