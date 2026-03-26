@@ -22,9 +22,9 @@ STEP 6: Visualization and Analysis
 
 ## PROGRAM
 
-### Name:DHAMINI S
+### Name:DHEENA DARSHINI KARTHIK DHEEPAN
 
-### Register Number:212224040064
+### Register Number:212223240030
 
 ```python
 import torch.nn as nn
@@ -77,14 +77,12 @@ model = DenoisingAutoencoder().to(device)
 criterion = nn.MSELoss()
 optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
-print("Name:DHAMINI S")
-print("Register Number:212224040064")
+
 summary(model, input_size=(1, 28, 28))
 
 def train(model, loader, criterion, optimizer, epochs=5):
     model.train()
-    print("Name:DHAMINI S")
-    print("Register Number:212224040064")
+    
     for epoch in range(epochs):
         running_loss = 0.0
         for images, _ in loader:
@@ -112,8 +110,7 @@ def visualize_denoising(model, loader, num_images=10):
     noisy_images = noisy_images.cpu().numpy()
     outputs = outputs.cpu().numpy()
 
-    print("Name:DHAMINI S")
-    print("Register Number:21222404000064")
+    
     plt.figure(figsize=(18, 6))
 
     for i in range(num_images):
